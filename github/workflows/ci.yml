@@ -4,10 +4,6 @@ on:
   pull_request:
     branches:
       - develop-github-actions
-    types:
-      - opened
-      - synchronize
-      - reopened
   push:
     branches:
       - develop-github-actions
