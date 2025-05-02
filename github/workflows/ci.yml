@@ -8,6 +8,9 @@ on:
       - opened
       - synchronize
       - reopened
+  push:
+    branches:
+      - develop-github-actions
 jobs:
   ci-checks:
     runs-on: ubuntu-latest
