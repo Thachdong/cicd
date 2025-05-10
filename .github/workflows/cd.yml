@@ -26,7 +26,7 @@ jobs:
           VPS_PASSWORD: ${{ secrets.VPS_PASSWORD }}
         run: |
           sshpass -p "$VPS_PASSWORD" ssh -o StrictHostKeyChecking=no $VPS_USER@$VPS_IP << 'EOF'
-          cd /cicd
+          cd /home/dongt/cicd
           git pull origin develop-github-actions
           npm install
           npm run build
